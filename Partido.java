@@ -1,5 +1,5 @@
 import java.util.*;
-public class Habitante{
+public class Partido{
     String nombre, apellido1, apellido2;
     
 }

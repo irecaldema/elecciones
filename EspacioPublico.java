@@ -1,5 +1,5 @@
 import java.util.*;
-public class Habitante{
+public class EspacioPublico{
     String nombre, apellido1, apellido2;
     
 }
