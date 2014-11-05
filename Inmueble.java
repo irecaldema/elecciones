@@ -1,5 +1,9 @@
 import java.util.*;
 public class Inmueble{
-    String nombre, apellido1, apellido2;
-    
+    String direccion;
+    int num_personas;
+    public Habitante(String direccion,int num_personas){
+        this.direccion=direccion;
+        this.num_personas=num_personas;
+    }
 }
