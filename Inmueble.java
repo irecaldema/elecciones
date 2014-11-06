@@ -3,10 +3,10 @@ public class Inmueble{
     String direccion;
     int poblacion;
     
-    public Inmueble(String direccion,int num_personas){
+    /*public Inmueble(String direccion,int num_personas){
         this.direccion=direccion;
         this.num_personas=num_personas;
-    }
+    }*/
     
     public void setNombre(String nombre)
     {

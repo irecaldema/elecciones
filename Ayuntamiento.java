@@ -1,11 +1,14 @@
 import java.util.*;
 public class Ayuntamiento{
     String nombre, direccion;
-    public Ayuntamiento(String nombre, String direccion, int poblacion)
+    int poblacion;
+    
+    /*public Ayuntamiento(String nombre, String direccion, int poblacion)
     {
         this.nombre=nombre;
         this.direccion=direccion;
-    }
+        this.poblacion=poblacion;
+    }*/
     
     public void setNombre(String nombre)
     {

@@ -3,11 +3,11 @@ public class Partido{
     String nombre;
     String[] repres = new String[10];
     
-    public Partido(String nombre,String repres)
+    /*public Partido(String nombre,String[] repres)
     {
         this.nombre=nombre;
-        this.repres=repres;
-    }
+        this.repres=repres.clone();
+    }*/
     
     public void setNombre(String nombre)
     {
@@ -15,7 +15,7 @@ public class Partido{
     }
     public void setRepres(String[] repres)
     {
-        this.repres = repres.clone();
+        this.repres=repres.clone();
     }
     
     public String getNombre()
