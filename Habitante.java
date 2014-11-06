@@ -2,6 +2,7 @@ import java.util.*;
 public class Habitante{
     String nombre, apellido1, apellido2, direccion;
     int edad;
+    
     public Habitante(String nombre, String apellido1, String apellido2, int edad, String direccion){
         this.nombre=nombre;
         this.apellido1=apellido1;
@@ -9,6 +10,7 @@ public class Habitante{
         this.edad=edad;
         this.direccion=direccion;
     }
+    
     public void setNombre(String nombre)
     {
         this.nombre=nombre;
@@ -29,5 +31,25 @@ public class Habitante{
     {
         this.direccion=direccion;
     } 
- 
+
+    public String getNombre()
+    {
+        return.nombre;
+    }
+    public String getApellido1()
+    {
+        return.apellido1;
+    }
+    public String getApellido2()
+    {
+        return.apellido2;
+    }
+    public int getEdad()
+    {
+        return.edad;
+    }    
+    public String getDireccion()
+    {
+        return.direccion;
+    } 
 }

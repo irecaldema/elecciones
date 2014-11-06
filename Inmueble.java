@@ -2,10 +2,12 @@ import java.util.*;
 public class Inmueble{
     String direccion;
     int num_personas;
+    
     public Inmueble(String direccion,int num_personas){
         this.direccion=direccion;
         this.num_personas=num_personas;
     }
+    
     public void setNombre(String nombre)
     {
         this.nombre=nombre;
@@ -14,4 +16,13 @@ public class Inmueble{
     {
         this.num_personas=num_personas;
     }
+    
+    public String getDireccion()
+    {
+        return.direccion;
+    }
+    public int getNum_personas()
+    {
+        return.num_personas;
+    }    
 }

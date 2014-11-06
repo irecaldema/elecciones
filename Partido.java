@@ -2,10 +2,13 @@ import java.util.*;
 public class Partido{
     String nombre;
     String[] repres = new String[20];
-    public Partido(String nombre,String repres){
+    
+    public Partido(String nombre,String repres)
+    {
         this.nombre=nombre;
         this.repres=repres;
     }
+    
     public void setNombre(String nombre)
     {
         this.nombre=nombre;
@@ -14,4 +17,13 @@ public class Partido{
     {
         this.repres=repres;
     }
+    
+    public String getNombre()
+    {
+        return.nombre;
+    }
+    public String[] getRepres()
+    {
+        return.repres;
+    }    
 }
