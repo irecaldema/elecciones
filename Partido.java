@@ -15,7 +15,7 @@ public class Partido{
     }
     public void setRepres(String[] repres)
     {
-        this.repres=repres;
+        this.repres = repres.clone();
     }
     
     public String getNombre()
