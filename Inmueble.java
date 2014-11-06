@@ -19,10 +19,10 @@ public class Inmueble{
     
     public String getDireccion()
     {
-        return.direccion;
+        return direccion;
     }
     public int getPoblacion()
     {
-        return.poblacion;
+        return poblacion;
     }    
 }

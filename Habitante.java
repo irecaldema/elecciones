@@ -34,22 +34,22 @@ public class Habitante{
 
     public String getNombre()
     {
-        return.nombre;
+        return nombre;
     }
     public String getApellido1()
     {
-        return.apellido1;
+        return apellido1;
     }
     public String getApellido2()
     {
-        return.apellido2;
+        return apellido2;
     }
     public int getEdad()
     {
-        return.edad;
+        return edad;
     }    
     public String getDireccion()
     {
-        return.direccion;
+        return direccion;
     } 
 }

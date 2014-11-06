@@ -25,15 +25,15 @@ public class Ayuntamiento{
     
     public String getNombre()
     {
-        return.nombre;
+        return nombre;
     }
     public String getDireccion()
     {
-        return.direccion;
+        return direccion;
     }
     public int getPoblacion()
     {
-        return.poblacion;
+        return poblacion;
     }
     
 }

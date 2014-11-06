@@ -19,10 +19,10 @@ public class EspacioPublico{
     
     public String getNombre()
     {
-        return.nombre;
+        return nombre;
     }
     public String getDireccion()
     {
-        return.direccion;
+        return direccion;
     }    
 }

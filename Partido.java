@@ -20,10 +20,10 @@ public class Partido{
     
     public String getNombre()
     {
-        return.nombre;
+        return nombre;
     }
     public String[] getRepres()
     {
-        return.repres;
+        return repres;
     }    
 }
