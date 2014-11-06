@@ -8,9 +8,9 @@ public class Inmueble{
         this.num_personas=num_personas;
     }*/
     
-    public void setNombre(String nombre)
+    public void setDireccion(String direccion)
     {
-        this.nombre=nombre;
+        this.direccion=direccion;
     }
     public void setPoblacion(int poblacion)
     {

@@ -18,7 +18,7 @@ public class Ayuntamiento{
     {
         this.direccion=direccion;
     }
-    public void setPoblacion(String poblacion)
+    public void setPoblacion(int poblacion)
     {
         this.poblacion=poblacion;
     }
