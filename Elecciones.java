@@ -39,6 +39,13 @@ public class Elecciones
                     }
                     else if (opcion2=='h')
                     {
+                        /*String nombre, apellido1, apellido2, direccion;
+                        int edad;*/
+                        
+                        System.out.print("\ningresa el nombre: ");
+                        nombre = sc.next();
+                        habi.setNombre(nombre);
+
                         
                     }
                     else if (opcion2=='e')
@@ -75,7 +82,11 @@ public class Elecciones
                     }
                     else if (opcion2=='h')
                     {
+                        /*String nombre, apellido1, apellido2, direccion;
+                        int edad;*/
                         
+                        nombre=habi.getNombre();
+                        System.out.print("\nnombre: " + nombre);
                     }
                     else if (opcion2=='e')
                     {
