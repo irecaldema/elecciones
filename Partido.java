@@ -1,5 +1,10 @@
 import java.util.*;
 public class Partido{
-    String nombre, apellido1, apellido2;
+    String nombre;
+    String[] repres = new String[20];
+    public Partido(String nombre,String repres){
+        this.nombre=nombre;
+        this.repres=repres;
+    }
     
 }
