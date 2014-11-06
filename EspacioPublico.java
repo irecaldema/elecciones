@@ -1,6 +1,6 @@
 import java.util.*;
 public class EspacioPublico{
-    String nombre;
+    String nombre, direccion;
     public EspacioPublico(String nombre, String direccion)
     {
         this.nombre=nombre;
