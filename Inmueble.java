@@ -1,7 +1,7 @@
 import java.util.*;
 public class Inmueble{
     String direccion;
-    int num_personas;
+    int poblacion;
     
     public Inmueble(String direccion,int num_personas){
         this.direccion=direccion;
@@ -12,17 +12,17 @@ public class Inmueble{
     {
         this.nombre=nombre;
     }
-    public void setNum_personas(int num_personas)
+    public void setPoblacion(int poblacion)
     {
-        this.num_personas=num_personas;
+        this.poblacion=poblacion;
     }
     
     public String getDireccion()
     {
         return.direccion;
     }
-    public int getNum_personas()
+    public int getPoblacion()
     {
-        return.num_personas;
+        return.poblacion;
     }    
 }

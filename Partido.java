@@ -1,7 +1,7 @@
 import java.util.*;
 public class Partido{
     String nombre;
-    String[] repres = new String[20];
+    String[] repres = new String[10];
     
     public Partido(String nombre,String repres)
     {
