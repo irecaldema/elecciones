@@ -22,8 +22,8 @@ public class Elecciones
         String[] repres = new String[10];
         */
         
-        party.setDireccion("calle desconodida");
-        party.setRepres("1","2","3","4","5","6","7","8","9","10");
+        party.setNombre("calle desconodida");
+        party.setRepres(["1","2","3","4","5","6","7","8","9","10"]);
         
         nombre=party.getNombre();
         repres=party.getRepres();
