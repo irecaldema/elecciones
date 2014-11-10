@@ -4,7 +4,7 @@ public class Elecciones
 {
     public static void main (String args[]) 
 	{
-        String nombre_hab, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
+        String nombre_hab, nombre_rep, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
         String[] repres = new String[10];
         int edad, poblacion_ayu, poblacion_inmu;
         char opcion, opcion2;
@@ -36,8 +36,13 @@ public class Elecciones
         party.setRepres(repres);
         
         nombre_par=party.getNombre();
-        repres=party.getRepres().clone();
+        repres=party.getRepres();
         
+        /*for (int i=0; i < repres.length; i++)
+		{
+			repres2[i] = repres[i];
+		}*/
+		
         /*
             Inmueble
         String direccion;
@@ -95,7 +100,14 @@ public class Elecciones
         System.out.println();
 
         System.out.println("\n Partido");
-        System.out.println("\n nombre: " + nombre_par + "\n repres: " + repres);
+        System.out.println("\n nombre: " + nombre_par + "\n representantes: \n");
+        
+        for (int i=0; i < repres.length; i++)
+		{
+			nombre_rep = repres[i];
+			System.out.println(nombre_rep);
+		}
+        
         System.out.println();
         
         System.out.println("\n Habitante");
