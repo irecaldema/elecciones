@@ -4,9 +4,9 @@ public class Elecciones
 {
     public static void main (String args[]) 
 	{
-        String nombre, direccion, apellido1, apellido2;
+        String nombre_hab, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
         String[] repres = new String[10];
-        int edad, poblacion;
+        int edad, poblacion_ayu, poblacion_inmu;
         char opcion, opcion2;
         
         
@@ -35,7 +35,7 @@ public class Elecciones
 		repres[9] = "10";
         party.setRepres(repres);
         
-        nombre=party.getNombre();
+        nombre_par=party.getNombre();
         repres=party.getRepres();
         
         /*
@@ -47,8 +47,8 @@ public class Elecciones
         inmu.setDireccion("calle desconodida");
         inmu.setPoblacion(35);
         
-        direccion=inmu.getDireccion();
-        poblacion=inmu.getPoblacion();
+        direccion_inmu=inmu.getDireccion();  
+        poblacion_inmu=inmu.getPoblacion();
         
         /*
             Habitante
@@ -59,13 +59,13 @@ public class Elecciones
         habi.setNombre("Iosu");
         habi.setApellido1("Rec");
         habi.setApellido2("Man");
-        habi.setDireccion("Calle desconodida");
+        habi.setDireccion("calle desconodida");
         habi.setEdad(50);
         
-        nombre=habi.getNombre();
+        nombre_hab=habi.getNombre();
         apellido1=habi.getApellido1();
         apellido2=habi.getApellido2();
-        direccion=habi.geDireccion();
+        direccion_hab=habi.getDireccion();
         edad=habi.getEdad();
         
         /*
@@ -76,8 +76,8 @@ public class Elecciones
         espacio.setNombre("Biblioteca nueva");
         espacio.setDireccion("calle 123");
         
-        nombre=espacio.setNombre();
-        direccion=espacio.setDireccion();
+        nombre_esp=espacio.getNombre();
+        direccion_esp=espacio.getDireccion();
         
         /*
             Ayuntamiento
@@ -87,9 +87,28 @@ public class Elecciones
         ayu.setDireccion("calle mayor");
         ayu.setPoblacion(200);
         
-        direccion=ayu.getDireccion();
-        poblacion=ayu.getPoblacion();    
-            
+        direccion_ayu=ayu.getDireccion();
+        poblacion_ayu=ayu.getPoblacion();   
+        
+        System.out.println("\n Inmueble");
+        System.out.println("\n direccion: " + direccion_inmu + "\n poblacion: " + poblacion_inmu);
+        System.out.println();
+
+        System.out.println("\n Partido");
+        System.out.println("\n nombre: " + nombre_par + "\n repres: " + repres);
+        System.out.println();
+        
+        System.out.println("\n Habitante");
+        System.out.println("\n nombre: " + nombre_hab + "\n apellido 1: " + apellido1 + "\n apellido 2: " + apellido2 + "\n direccion: " + direccion_hab + "\n edad: " + edad);
+        System.out.println();
+        
+        System.out.println("\n EspacioPublico");
+        System.out.println("\n nombre_esp: " + nombre_esp + "\n direccion: " + direccion_esp);
+        System.out.println();
+
+        System.out.println("\n Ayuntamiento");
+        System.out.println("\n direccion: " + direccion_ayu + "\n poblacion: " + poblacion_ayu); 
+        System.out.println();
         
         /*Scanner sc = new Scanner(System.in);
         System.out.println("\ningresa la opcion: registrar (r), leer (l), salir (s)");
