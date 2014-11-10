@@ -23,7 +23,8 @@ public class Elecciones
         */
         
         party.setNombre("calle desconodida");
-        party.setRepres(["1","2","3","4","5","6","7","8","9","10"]);
+        repres=["1","2","3","4","5","6","7","8","9","10"];
+        party.setRepres(repres);
         
         nombre=party.getNombre();
         repres=party.getRepres();
