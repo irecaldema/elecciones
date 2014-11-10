@@ -36,7 +36,7 @@ public class Elecciones
         party.setRepres(repres);
         
         nombre_par=party.getNombre();
-        repres=party.getRepres();
+        repres=party.getRepres().clone();
         
         /*
             Inmueble
