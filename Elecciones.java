@@ -24,7 +24,7 @@ public class Elecciones
             
             if (opcion=='r')
             {
-                System.out.println("\ningresa la opcion: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
+                System.out.println("\ningresa la opcion para registrar: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
                 opcion2 = sc.next().charAt(0);
                 
                 while (opcion2!='s')
@@ -60,14 +60,14 @@ public class Elecciones
                     {
                         System.out.println("\nNo se selecciono la opcion correcta");//opcion2
                     }                
-                    System.out.println("\ningresa la opcion: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
+                    System.out.println("\ningresa la opcion para registrar: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
                     opcion2 = sc.next().charAt(0);
                 }
                 
             }
             else if (opcion=='l')
             {
-                System.out.println("\ningresa la opcion: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
+                System.out.println("\ningresa la opcion para leer: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
                 opcion2 = sc.next().charAt(0);
                 
                 while (opcion2!='s')
@@ -84,7 +84,7 @@ public class Elecciones
                     {
                         /*String nombre, apellido1, apellido2, direccion;
                         int edad;*/
-                        
+                        //habi.setNombre("iosu");
                         nombre=habi.getNombre();
                         System.out.println("\nnombre: " + nombre);
                     }
@@ -98,13 +98,15 @@ public class Elecciones
                     }
                     else
                     {
-                        System.out.println("\nNo se selecciono la opcion correcta");//opcion2
+                        System.out.println("\nNo se selecciono la opcion correcta 2");//opcion2
                     } 
+                    System.out.println("\ningresa la opcion para leer: Partido (p), Inmueble (i), Habitante (h), EspacioPublico(e), Ayuntamiento(a), salir (s)");
+                    opcion2 = sc.next().charAt(0);
                 }    
             }        
             else
             {
-                System.out.println("\nNo se selecciono la opcion correcta");//opcion1
+                System.out.println("\nNo se selecciono la opcion correcta 1");//opcion1
             }
             System.out.println("\ningresa la opcion: registrar (r), leer (l), salir (s)");
             opcion = sc.next().charAt(0);
