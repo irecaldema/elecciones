@@ -8,13 +8,14 @@ public class Elecciones
         String[] repres = new String[10];
         int edad, poblacion_ayu, poblacion_inmu;
         char opcion, opcion2;
-        
+
         
         Partido party = new Partido();
         Inmueble inmu = new Inmueble();
         Habitante habi = new Habitante();
         EspacioPublico espacio = new EspacioPublico();
         Ayuntamiento ayu = new Ayuntamiento();
+        ArrayList <String> lista_partidos = new ArrayList <String> ();
             
         /* 
             Partido
@@ -123,16 +124,26 @@ public class Elecciones
         System.out.println();
         
         System.out.println();
-        System.out.println("\n Partidos que van a participar en las elecciones");
+        System.out.println("\n Partidos que van a participar en las elecciones: ");
         
         FileReader fr = new FileReader("listadoPartidos.txt");
         BufferedReader br = new BufferedReader(fr); 
         String s; 
         while((s = br.readLine()) != null) 
         { 
-            System.out.println(s);
+            lista_partidos.add(s);
+            //System.out.println(s);
         }
         
+        for(int i=0; i<lista_partidos.size(); i++)
+		{
+			System.out.println("    "+lista_partidos.get(i));
+		}
+        
+        // Vaciar el ArrayList
+		lista_partidos.clear();
+		
+        System.out.println();
         /*Scanner sc = new Scanner(System.in);
         System.out.println("\ningresa la opcion: registrar (r), leer (l), salir (s)");
         opcion = sc.next().charAt(0);
