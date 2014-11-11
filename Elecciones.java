@@ -1,8 +1,8 @@
-import java.util.Scanner;
-
+import java.util.*;
+import java.io.*;
 public class Elecciones 
 {
-    public static void main (String args[]) 
+    public static void main (String args[]) throws IOException 
 	{
         String nombre_hab, nombre_rep, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
         String[] repres = new String[10];
@@ -122,18 +122,23 @@ public class Elecciones
         System.out.println("\n direccion: " + direccion_ayu + "\n poblacion: " + poblacion_ayu); 
         System.out.println();
         
+        System.out.println();
+        System.out.println("\n Partidos que van a participar en las elecciones");
+        
+        FileReader fr = new FileReader("listadoPartidos.txt");
+        BufferedReader br = new BufferedReader(fr); 
+        String s; 
+        while((s = br.readLine()) != null) 
+        { 
+            System.out.println(s);
+        }
+        
         /*Scanner sc = new Scanner(System.in);
         System.out.println("\ningresa la opcion: registrar (r), leer (l), salir (s)");
         opcion = sc.next().charAt(0);
          
         while (opcion!='s')
         {
-            
-            Partido party = new Partido();
-            Inmueble inmu = new Inmueble();
-            Habitante habi = new Habitante();
-            EspacioPublico espacio = new EspacioPublico();
-            Ayuntamiento ayu = new Ayuntamiento();
             
             if (opcion=='r')
             {
