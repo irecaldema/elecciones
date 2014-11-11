@@ -1,0 +1,5 @@
+partido burro
+partido elefante
+partido mono
+partido serpiente
+partido leon
