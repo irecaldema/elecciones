@@ -207,11 +207,9 @@ public class Elecciones
                 System.out.print(" " + al_party.get(y));
             }
             System.out.println();
+            // Vaciar el ArrayList
+            al_party.clear();
         }
-
-        // Vaciar el ArrayList
-		al_party.clear();
-
         System.out.println();
      
         System.out.println("\n\nEGUN ONA IZAN!!\n");
