@@ -152,7 +152,7 @@ public class Elecciones
 		*/
         //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
         String[] a_party = new String[3];
-        System.out.println("muestra el contenido del array");
+        System.out.println("los partidos que se presentan a las elecciones");
 	    while((s = br.readLine()) != null) 
         { 
             a_party=s.split(",");
@@ -164,11 +164,11 @@ public class Elecciones
                 }
                 else if (y==1)
                 {
-                    System.out.print("siglas: ");
+                    System.out.print("  siglas: ");
                 }
-                else (y==2)
+                else
                 {
-                    System.out.print("presidente: ");
+                    System.out.print("  presidente: ");
                 }
                 System.out.print(" " + a_party[y]);
             }
