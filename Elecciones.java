@@ -179,17 +179,19 @@ public class Elecciones
 			System.out.println("    "+a_party.get(i));
 		}*/
          
-        ArrayList <Partido> al_party = new ArrayList <Partido> ();	
+        //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
+        ArrayList <String> al_party = new ArrayList <String> ();
 
         System.out.println("los partidos que se presentan a las elecciones");
 	    while((s = br.readLine()) != null) 
         { 
             //al_party=s.split(",");
             StringTokenizer st = new StringTokenizer(s);
-            String zzz = st.nextToken(",")
-            al_party.add(zzz);
+
             for(int y=0; y<3; y++)
             { 
+                String zzz = st.nextToken(",");
+                al_party.add(zzz);
                 if (y==0)
                 {
                     System.out.print("nombre : ");
@@ -202,7 +204,7 @@ public class Elecciones
                 {
                     System.out.print("  presidente: ");
                 }
-                System.out.print(" " + al_party[y]);
+                System.out.print(" " + al_party.get(y));
             }
             System.out.println();
         }
