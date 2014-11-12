@@ -180,7 +180,7 @@ public class Elecciones
 		}*/
          
         //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
-        ArrayList <String> al_party = new ArrayList <String> ();
+        ArrayList <Partido> al_party = new ArrayList <Partido> ();
 
         System.out.println("los partidos que se presentan a las elecciones");
 	    while((s = br.readLine()) != null) 
