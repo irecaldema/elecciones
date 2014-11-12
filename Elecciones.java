@@ -105,7 +105,8 @@ public class Elecciones
         System.out.println();
 
         System.out.println("\n Partido");
-        System.out.println("\n nombre: " + nombre_par +/* "\n representantes: \n"*/ "\n siglas: " + siglas "\n presidente: "+ presi);
+        //System.out.println("\n nombre: " + nombre_par +/* "\n representantes: \n"*/ "\n siglas: " + siglas + "\n presidente: " + presi);
+        System.out.println("\n nombre: " + nombre_par + "\n siglas: " + siglas + "\n presidente: " + presi);
         
         /*for (int i=0; i < repres.length; i++)
 		{
@@ -132,14 +133,15 @@ public class Elecciones
         
         FileReader fr = new FileReader("listadoPartidos.txt");
         BufferedReader br = new BufferedReader(fr); 
+        
         String s; 
+        /*
         while((s = br.readLine()) != null) 
         { 
-            s.split(',');
             lista_partidos.add(s);
             //System.out.println(s);
         }
-        
+        System.out.println("muestra el contenido del arraylist");
         for(int i=0; i<lista_partidos.size(); i++)
 		{
 			System.out.println("    "+lista_partidos.get(i));
@@ -147,7 +149,40 @@ public class Elecciones
         
         // Vaciar el ArrayList
 		lista_partidos.clear();
-		
+		*/
+        //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
+        String[] a_party = new String[3];
+        System.out.println("muestra el contenido del array");
+	    while((s = br.readLine()) != null) 
+        { 
+            a_party=s.split(",");
+            for(int y=0; y<3; y++)
+            { 
+                if (y==0)
+                {
+                    System.out.print("nombre : ");
+                }
+                else if (y==1)
+                {
+                    System.out.print("siglas: ");
+                }
+                else (y==2)
+                {
+                    System.out.print("presidente: ");
+                }
+                System.out.print(" " + a_party[y]);
+            }
+            System.out.println();
+        }
+        /*for(int i=0; i<a_party.size(); i++)
+		{
+			System.out.println("    "+a_party.get(i));
+		}*/
+        
+
+        // Vaciar el ArrayList
+		//al_party.clear();
+
         System.out.println();
      
         System.out.println("\n\nEGUN ONA IZAN!!\n");
