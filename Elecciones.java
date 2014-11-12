@@ -105,13 +105,13 @@ public class Elecciones
         System.out.println();
 
         System.out.println("\n Partido");
-        System.out.println("\n nombre: " + nombre_par + "\n representantes: \n");
+        System.out.println("\n nombre: " + nombre_par +/* "\n representantes: \n"*/ "\n siglas: " + siglas "\n presidente: "+ presi);
         
-        for (int i=0; i < repres.length; i++)
+        /*for (int i=0; i < repres.length; i++)
 		{
 			nombre_rep = repres[i];
 			System.out.println(nombre_rep);
-		}
+		}*/
         
         System.out.println();
         
@@ -135,6 +135,7 @@ public class Elecciones
         String s; 
         while((s = br.readLine()) != null) 
         { 
+            s.split(',');
             lista_partidos.add(s);
             //System.out.println(s);
         }
