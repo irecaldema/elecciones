@@ -146,10 +146,10 @@ public class Elecciones
 		{
 			System.out.println("    "+lista_partidos.get(i));
 		}
-        
+        */
         // Vaciar el ArrayList
 		lista_partidos.clear();
-		*/
+		
         //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
        /* String[] a_party = new String[3];
         System.out.println("los partidos que se presentan a las elecciones");
@@ -184,7 +184,10 @@ public class Elecciones
         System.out.println("los partidos que se presentan a las elecciones");
 	    while((s = br.readLine()) != null) 
         { 
-            al_party=s.split(",");
+            //al_party=s.split(",");
+            StringTokenizer st = new StringTokenizer(s);
+            String zzz = st.nextToken(",")
+            al_party.add(zzz);
             for(int y=0; y<3; y++)
             { 
                 if (y==0)
@@ -205,7 +208,7 @@ public class Elecciones
         }
 
         // Vaciar el ArrayList
-		//al_party.clear();
+		al_party.clear();
 
         System.out.println();
      
