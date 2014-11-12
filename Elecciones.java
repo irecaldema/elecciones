@@ -22,9 +22,11 @@ public class Elecciones
         String nombre;
         String[] repres = new String[10];
         */
-        /*
+        
         party.setNombre("partido burrito");
-        repres[0] = "1";
+        party.setSiglas("PB");
+        party.setPresi("Pman");
+        /*repres[0] = "1";
 		repres[1] = "2";
 		repres[2] = "3";
 		repres[3] = "4";
