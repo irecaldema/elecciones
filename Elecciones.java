@@ -151,7 +151,7 @@ public class Elecciones
 		lista_partidos.clear();
 		*/
         //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
-        String[] a_party = new String[3];
+       /* String[] a_party = new String[3];
         System.out.println("los partidos que se presentan a las elecciones");
 	    while((s = br.readLine()) != null) 
         { 
@@ -173,12 +173,36 @@ public class Elecciones
                 System.out.print(" " + a_party[y]);
             }
             System.out.println();
-        }
+        }*/
         /*for(int i=0; i<a_party.size(); i++)
 		{
 			System.out.println("    "+a_party.get(i));
 		}*/
-        
+         
+        ArrayList <Partido> al_party = new ArrayList <Partido> ();	
+
+        System.out.println("los partidos que se presentan a las elecciones");
+	    while((s = br.readLine()) != null) 
+        { 
+            al_party=s.split(",");
+            for(int y=0; y<3; y++)
+            { 
+                if (y==0)
+                {
+                    System.out.print("nombre : ");
+                }
+                else if (y==1)
+                {
+                    System.out.print("  siglas: ");
+                }
+                else
+                {
+                    System.out.print("  presidente: ");
+                }
+                System.out.print(" " + al_party[y]);
+            }
+            System.out.println();
+        }
 
         // Vaciar el ArrayList
 		//al_party.clear();
