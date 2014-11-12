@@ -4,8 +4,8 @@ public class Elecciones
 {
     public static void main (String args[]) throws IOException 
 	{
-        String nombre_hab, nombre_rep, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
-        String[] repres = new String[10];
+        String nombre_hab, siglas, presi, nombre_rep, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
+        /*String[] repres = new String[10];*/
         int edad, poblacion_ayu, poblacion_inmu;
         char opcion, opcion2;
 
@@ -22,7 +22,7 @@ public class Elecciones
         String nombre;
         String[] repres = new String[10];
         */
-        
+        /*
         party.setNombre("partido burrito");
         repres[0] = "1";
 		repres[1] = "2";
@@ -34,10 +34,12 @@ public class Elecciones
 		repres[7] = "8";
 		repres[8] = "9";
 		repres[9] = "10";
-        party.setRepres(repres);
+        party.setRepres(repres);*/
         
         nombre_par=party.getNombre();
-        repres=party.getRepres();
+        siglas=party.getSiglas();
+        presi=party.getPresi();
+        /*repres=party.getRepres();*/
         
         /*for (int i=0; i < repres.length; i++)
 		{

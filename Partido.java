@@ -1,7 +1,7 @@
 import java.util.*;
 public class Partido{
-    String nombre;
-    String[] repres = new String[10];
+    String nombre, presi, siglas;
+    /*String[] repres = new String[10];*/
     
     /*public Partido(String nombre,String[] repres)
     {
@@ -13,17 +13,33 @@ public class Partido{
     {
         this.nombre=nombre;
     }
-    public void setRepres(String[] repres)
+    public void setSiglas(String siglas)
+    {
+        this.siglas=siglas;
+    }
+    public void setPresi(String presi)
+    {
+        this.presi=presi;
+    }
+    /*public void setRepres(String[] repres)
     {
         this.repres=repres;
-    }
+    }*/
     
     public String getNombre()
     {
         return nombre;
     }
-    public String[] getRepres()
+    public String getSiglas()
+    {
+        return siglas;
+    }
+    public String getPresi()
+    {
+        return presi;
+    }       
+    /*public String[] getRepres()
     {
         return repres;
-    }    
+    }    */
 }

@@ -1,5 +1,5 @@
-partido burro
-partido elefante
-partido mono
-partido serpiente
-partido leon
+partido burro,PB,Bman
+partido elefante,PE,Eman
+partido mono,PM,Mman
+partido serpiente,PS,Sman
+partido leon,PL,Lman
