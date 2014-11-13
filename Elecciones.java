@@ -10,7 +10,7 @@ public class Elecciones
         char opcion, opcion2;
 
         
-        Partido party = new Partido();
+        Partido party = new Partido("","","");
         Inmueble inmu = new Inmueble();
         Habitante habi = new Habitante();
         EspacioPublico espacio = new EspacioPublico();
@@ -181,32 +181,44 @@ public class Elecciones
          
         //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
         ArrayList <Partido> al_party = new ArrayList <Partido> ();
+        String zzz1="", zzz2="", zzz3=""; 
 
-        System.out.println("los partidos que se presentan a las elecciones");
-	    while((s = br.readLine()) != null) 
+        while((s = br.readLine()) != null) 
         { 
             //al_party=s.split(",");
             StringTokenizer st = new StringTokenizer(s);
-
             for(int y=0; y<3; y++)
             { 
                 String zzz = st.nextToken(",");
-                al_party.add(zzz);
+                //al_party.add(zzz);
                 if (y==0)
                 {
-                    System.out.print("nombre : ");
+                    //System.out.print("nombre : ");
+                    zzz1=zzz;
+                    
                 }
                 else if (y==1)
                 {
-                    System.out.print("  siglas: ");
+                    //System.out.print("  siglas: ");
+                    zzz2=zzz;
                 }
                 else
                 {
-                    System.out.print("  presidente: ");
+                    //System.out.print("  presidente: ");
+                    zzz3=zzz;
                 }
-                System.out.print(" " + al_party.get(y));
+                //System.out.print(" " + al_party.get(y));
             }
+            al_party.add(new Partido(zzz1,zzz2,zzz3));
+            
+            System.out.print("nombre : ");
+            al_party.get(0);
+            System.out.print("  siglas: ");
+            al_party.get(1);
+            System.out.print("  presidente: ");
+            al_party.get(3);
             System.out.println();
+            
             // Vaciar el ArrayList
             al_party.clear();
         }

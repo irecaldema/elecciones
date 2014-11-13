@@ -9,6 +9,13 @@ public class Partido{
         this.repres=repres.clone();
     }*/
     
+    public Partido(String nombre, String siglas, String presi)
+    {
+        this.nombre=nombre;
+        this.siglas=siglas;
+        this.presi=presi;
+    }
+    
     public void setNombre(String nombre)
     {
         this.nombre=nombre;
