@@ -179,46 +179,39 @@ public class Elecciones
 			System.out.println("    "+a_party.get(i));
 		}*/
          
-        //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
         ArrayList <Partido> al_party = new ArrayList <Partido> ();
         String zzz1="", zzz2="", zzz3=""; 
 
         while((s = br.readLine()) != null) 
         { 
-            //al_party=s.split(",");
             StringTokenizer st = new StringTokenizer(s);
             for(int y=0; y<3; y++)
             { 
                 String zzz = st.nextToken(",");
-                //al_party.add(zzz);
                 if (y==0)
                 {
-                    //System.out.print("nombre : ");
+                    //nombre
                     zzz1=zzz;
-                    
                 }
                 else if (y==1)
                 {
-                    //System.out.print("  siglas: ");
+                    //siglas
                     zzz2=zzz;
                 }
                 else
                 {
-                    //System.out.print("  presidente: ");
+                    //presidente
                     zzz3=zzz;
                 }
-                //System.out.print(" " + al_party.get(y));
             }
             al_party.add(new Partido(zzz1,zzz2,zzz3));
             
-            System.out.print("nombre : ");
-            al_party.get(0);
-            System.out.print("  siglas: ");
-            al_party.get(1);
-            System.out.print("  presidente: ");
-            al_party.get(3);
             System.out.println();
-            
+            for(int i=0; i<al_party.size(); i++)
+		    {
+			    System.out.print("  nombre: "+al_party.get(i).getNombre() +" siglas: "+al_party.get(i).getSiglas()+" presidente: "+ al_party.get(i).getPresi());
+		    }
+
             // Vaciar el ArrayList
             al_party.clear();
         }
