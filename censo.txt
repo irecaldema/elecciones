@@ -1,4 +1,4 @@
-serpi,serpiente,cobra,18,calle sin salida
+serpi,serpiente,cobra,18,calle_sin_salida
 mini_serpi,mini_serpiente,mini_cobra,16,calle sin salida
 senior_serpi,senior_serpiente,senior_cobra,45,calle sin salida
 serpi5,ser5piente,cobr5a,55,calle sin salida

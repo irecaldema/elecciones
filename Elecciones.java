@@ -205,17 +205,17 @@ public class Elecciones
                 }
             }
             al_party.add(new Partido(zzz1,zzz2,zzz3));
-            System.out.println();
         }
         for(int i=0; i<al_party.size(); i++)
         {
-            System.out.print("  nombre: "+al_party.get(i).getNombre() +" siglas: "+al_party.get(i).getSiglas()+" presidente: "+ al_party.get(i).getPresi());
+            System.out.println("  nombre: "+al_party.get(i).getNombre() +" siglas: "+al_party.get(i).getSiglas()+" presidente: "+ al_party.get(i).getPresi());
         }
             
         // Vaciar el ArrayList
         al_party.clear();
         
         System.out.println();
+        System.out.println();        
         
         // censo personas
         System.out.println("\n Censo: ");
@@ -226,10 +226,10 @@ public class Elecciones
         String zz1="", zz2="", zz3="", zz5=""; 
         int zz4=0;
 
-        while((s = br.readLine()) != null) 
+        while((s = br2.readLine()) != null) 
         { 
             StringTokenizer st = new StringTokenizer(s);
-            for(int y=0; y<3; y++)
+            for(int y=0; y<5; y++)
             { 
                 String zz = st.nextToken(",");
                 if (y==0)
@@ -259,12 +259,14 @@ public class Elecciones
                     zz5=zz;
                 }
             }
+            if (zz4>=18)
+            {
             al_habi.add(new Habitante(zz1,zz2,zz3,zz4,zz5));
-            System.out.println();
+            }
         }
             for(int i=0; i<al_habi.size(); i++)
 		    {
-			    System.out.print("  nombre: "+al_habi.get(i).getNombre() +" primer apellido: "+al_habi.get(i).getApellido1()+" segundo apellido: "+ al_habi.get(i).getApellido2()+" edad: "+ al_habi.get(i).getEdad()+" direccion: "+ al_habi.get(i).getDireccion());
+			    System.out.println("  nombre: "+al_habi.get(i).getNombre() +" primer apellido: "+al_habi.get(i).getApellido1()+" segundo apellido: "+ al_habi.get(i).getApellido2()+" edad: "+ al_habi.get(i).getEdad()+" direccion: "+ al_habi.get(i).getDireccion());
 		    }
 
             // Vaciar el ArrayList
