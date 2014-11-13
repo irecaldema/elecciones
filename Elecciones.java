@@ -218,7 +218,7 @@ public class Elecciones
         System.out.println();
         
         // censo personas
-        
+        System.out.println("\n Censo: ");
         FileReader fr2 = new FileReader("censo.txt");
         BufferedReader br2 = new BufferedReader(fr2); 
                 
