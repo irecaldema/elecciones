@@ -249,7 +249,7 @@ public class Elecciones
                     String zz = st.nextToken(",");                    
                     zz3=zz;
                 }
-                else if (y==2)
+                else if (y==3)
                 {
                     //presidente
                     int zx = st.nextToken(",");                    
