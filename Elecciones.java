@@ -15,8 +15,7 @@ public class Elecciones
         Habitante habi = new Habitante("","","",0,"");
         EspacioPublico espacio = new EspacioPublico();
         Ayuntamiento ayu = new Ayuntamiento();
-        ArrayList <String> lista_partidos = new ArrayList <String> ();
-            
+
         /* 
             Partido
         String nombre;
@@ -148,7 +147,7 @@ public class Elecciones
 		}
         */
         // Vaciar el ArrayList
-		lista_partidos.clear();
+		//lista_partidos.clear();
 		
         //ArrayList <Partido> al_party = new ArrayList <Partido> ();	
        /* String[] a_party = new String[3];
