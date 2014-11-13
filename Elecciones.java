@@ -12,7 +12,7 @@ public class Elecciones
         
         Partido party = new Partido("","","");
         Inmueble inmu = new Inmueble();
-        Habitante habi = new Habitante();
+        Habitante habi = new Habitante("","","",0,"");
         EspacioPublico espacio = new EspacioPublico();
         Ayuntamiento ayu = new Ayuntamiento();
         ArrayList <String> lista_partidos = new ArrayList <String> ();
@@ -205,17 +205,74 @@ public class Elecciones
                 }
             }
             al_party.add(new Partido(zzz1,zzz2,zzz3));
-            
             System.out.println();
-            for(int i=0; i<al_party.size(); i++)
+        }
+        for(int i=0; i<al_party.size(); i++)
+        {
+            System.out.print("  nombre: "+al_party.get(i).getNombre() +" siglas: "+al_party.get(i).getSiglas()+" presidente: "+ al_party.get(i).getPresi());
+        }
+            
+        // Vaciar el ArrayList
+        al_party.clear();
+        
+        System.out.println();
+        
+        // censo personas
+        
+        FileReader fr2 = new FileReader("censo.txt");
+        BufferedReader br2 = new BufferedReader(fr2); 
+                
+        ArrayList <Habitante> al_habi = new ArrayList <Habitante> ();
+        String zz1="", zz2="", zz3="", zz5=""; 
+        int zz4=0;
+
+        while((s = br.readLine()) != null) 
+        { 
+            StringTokenizer st = new StringTokenizer(s);
+            for(int y=0; y<3; y++)
+            { 
+                if (y==0)
+                {
+                    //nombre
+                    String zz = st.nextToken(",");
+                    zz1=zz;
+                }
+                else if (y==1)
+                {
+                    //siglas
+                    String zz = st.nextToken(",");                    
+                    zz2=zz;
+                }
+                else if (y==2)
+                {
+                    //presidente
+                    String zz = st.nextToken(",");                    
+                    zz3=zz;
+                }
+                else if (y==2)
+                {
+                    //presidente
+                    int zx = st.nextToken(",");                    
+                    zz4=zx;
+                }
+                else
+                {
+                    //presidente
+                    String zz = st.nextToken(",");                    
+                    zz5=zz;
+                }
+            }
+            al_habi.add(new Habitante(zz1,zz2,zz3,zz4,zz5));
+            System.out.println();
+        }
+            for(int i=0; i<al_habi.size(); i++)
 		    {
-			    System.out.print("  nombre: "+al_party.get(i).getNombre() +" siglas: "+al_party.get(i).getSiglas()+" presidente: "+ al_party.get(i).getPresi());
+			    System.out.print("  nombre: "+al_habi.get(i).getNombre() +" primer apellido: "+al_habi.get(i).getApellido1()+" segundo apellido: "+ al_habi.get(i).getApellido2()+" edad: "+ al_habi.get(i).getEdad()+" direccion: "+ al_habi.get(i).getDireccion());
 		    }
 
             // Vaciar el ArrayList
-            al_party.clear();
-        }
-        System.out.println();
+            al_habi.clear();
+        
      
         System.out.println("\n\nEGUN ONA IZAN!!\n");
     }
