@@ -231,34 +231,31 @@ public class Elecciones
             StringTokenizer st = new StringTokenizer(s);
             for(int y=0; y<3; y++)
             { 
+                String zz = st.nextToken(",");
                 if (y==0)
                 {
                     //nombre
-                    String zz = st.nextToken(",");
                     zz1=zz;
                 }
                 else if (y==1)
                 {
                     //siglas
-                    String zz = st.nextToken(",");                    
                     zz2=zz;
                 }
                 else if (y==2)
                 {
                     //presidente
-                    String zz = st.nextToken(",");                    
                     zz3=zz;
                 }
                 else if (y==3)
                 {
                     //presidente
-                    int zx = st.nextToken(",");                    
+                    int zx = Integer.parseInt(zz);                    
                     zz4=zx;
                 }
                 else
                 {
                     //presidente
-                    String zz = st.nextToken(",");                    
                     zz5=zz;
                 }
             }
