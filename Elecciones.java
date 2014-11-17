@@ -186,10 +186,14 @@ public class Elecciones
             StringTokenizer st = new StringTokenizer(s, ",");
             int contador_token1 = st.countTokens();
             String[] array_separados = new String[contador_token1];
-
-            array_separados[0] = st.nextToken();
+            
+            for (int i=0;i<contador_token1;i++)
+            {
+                array_separados[i] = st.nextToken();
+            }
+            /*array_separados[0] = st.nextToken();
 			array_separados[1] = st.nextToken();
-			array_separados[2] = st.nextToken();
+			array_separados[2] = st.nextToken();*/
 
             al_party.add(new Partido(array_separados[0],array_separados[1],array_separados[2]));
         }
