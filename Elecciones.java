@@ -186,8 +186,7 @@ public class Elecciones
             StringTokenizer st = new StringTokenizer(s);
             int contador_token1 = st.countTokens();
             String[] array_separados = new String[contador_token1];
-            contador_token1++;
-            
+
             array_separados[0] = st.nextToken();
 			array_separados[1] = st.nextToken();
 			array_separados[2] = st.nextToken();
