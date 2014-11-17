@@ -183,7 +183,7 @@ public class Elecciones
 
         while((s = br.readLine()) != null) 
         { 
-            StringTokenizer st = new StringTokenizer(s);
+            StringTokenizer st = new StringTokenizer(s, ",");
             int contador_token1 = st.countTokens();
             String[] array_separados = new String[contador_token1];
 
