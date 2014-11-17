@@ -18,7 +18,7 @@ public class Elecciones
 
         /* 
             Partido
-        String nombre;
+        String nombre, siglas, presi;
         String[] repres = new String[10];
         */
         
