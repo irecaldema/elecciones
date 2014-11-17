@@ -184,15 +184,16 @@ public class Elecciones
         while((s = br.readLine()) != null) 
         { 
             StringTokenizer st = new StringTokenizer(s);
-            for(int y=0; y<3; y++)
+            int contador_token1 = st.countTokens();
+            for(int y=-1; y<contador_token1; y++)
             { 
                 String zzz = st.nextToken(",");
-                if (y==0)
+                if (y==-1)
                 {
                     //nombre
                     zzz1=zzz;
                 }
-                else if (y==1)
+                else if (y==0)
                 {
                     //siglas
                     zzz2=zzz;
@@ -220,47 +221,17 @@ public class Elecciones
         System.out.println("\n Censo: ");
         FileReader fr2 = new FileReader("censo.txt");
         BufferedReader br2 = new BufferedReader(fr2); 
+        String s2; 
                 
         ArrayList <Habitante> al_habi = new ArrayList <Habitante> ();
-        String zz1="", zz2="", zz3="", zz5=""; 
-        int zz4=0;
 
-        while((s = br2.readLine()) != null) 
+        while((s2 = br2.readLine()) != null) 
         { 
-            StringTokenizer st = new StringTokenizer(s);
-            for(int y=0; y<5; y++)
-            { 
-                String zz = st.nextToken(",");
-                if (y==0)
-                {
-                    //nombre
-                    zz1=zz;
-                }
-                else if (y==1)
-                {
-                    //siglas
-                    zz2=zz;
-                }
-                else if (y==2)
-                {
-                    //presidente
-                    zz3=zz;
-                }
-                else if (y==3)
-                {
-                    //presidente
-                    int zx = Integer.parseInt(zz);                    
-                    zz4=zx;
-                }
-                else
-                {
-                    //presidente
-                    zz5=zz;
-                }
-            }
-            if (zz4>=18)
+            String[] separadas = s2.split(",");
+            
+            if (Integer.parseInt(separadas[3])>=18)
             {
-            al_habi.add(new Habitante(zz1,zz2,zz3,zz4,zz5));
+                al_habi.add(new Habitante(separadas[0],separadas[1],separadas[2],Integer.parseInt(separadas[3]),separadas[4]));
             }
         }
             for(int i=0; i<al_habi.size(); i++)
