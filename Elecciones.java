@@ -185,15 +185,16 @@ public class Elecciones
         { 
             StringTokenizer st = new StringTokenizer(s);
             int contador_token1 = st.countTokens();
-            for(int y=-1; y<contador_token1; y++)
+            contador_token1++;
+            for(int y=0; y<contador_token1; y++)
             { 
                 String zzz = st.nextToken(",");
-                if (y==-1)
+                if (y==0)
                 {
                     //nombre
                     zzz1=zzz;
                 }
-                else if (y==0)
+                else if (y==1)
                 {
                     //siglas
                     zzz2=zzz;
