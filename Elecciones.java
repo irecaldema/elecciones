@@ -185,27 +185,14 @@ public class Elecciones
         { 
             StringTokenizer st = new StringTokenizer(s);
             int contador_token1 = st.countTokens();
+            String[] array_separados = new String[contador_token1];
             contador_token1++;
-            for(int y=0; y<contador_token1; y++)
-            { 
-                String zzz = st.nextToken(",");
-                if (y==0)
-                {
-                    //nombre
-                    zzz1=zzz;
-                }
-                else if (y==1)
-                {
-                    //siglas
-                    zzz2=zzz;
-                }
-                else
-                {
-                    //presidente
-                    zzz3=zzz;
-                }
-            }
-            al_party.add(new Partido(zzz1,zzz2,zzz3));
+            
+            array_separados[0] = st.nextToken();
+			array_separados[1] = st.nextToken();
+			array_separados[2] = st.nextToken();
+
+            al_party.add(new Partido(array_separados[0],array_separados[1],array_separados[2]));
         }
         for(int i=0; i<al_party.size(); i++)
         {
