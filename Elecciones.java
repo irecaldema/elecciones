@@ -1,9 +1,7 @@
 import java.util.*;
 import java.io.*;
-public class Elecciones 
-{
-    public static void main (String args[]) throws IOException 
-	{
+public class Elecciones {
+    public static void main (String args[]) throws IOException 	{
         String nombre_hab, siglas, presi, nombre_rep, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
         /*String[] repres = new String[10];*/
         int edad, poblacion_ayu, poblacion_inmu;

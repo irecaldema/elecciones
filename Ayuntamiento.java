@@ -3,11 +3,13 @@ public class Ayuntamiento{
     String direccion;
     int poblacion;
     
-    /*public Ayuntamiento( String direccion, int poblacion)
+    public Ayuntamiento(){};
+    
+    public Ayuntamiento( String direccion, int poblacion)
     {
         this.direccion=direccion;
         this.poblacion=poblacion;
-    }*/
+    }
     
     public void setDireccion(String direccion)
     {
